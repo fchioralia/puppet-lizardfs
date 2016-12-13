@@ -239,12 +239,9 @@ class lizardfs::master(
       require => File[$script_generate_mfsmaster],
       before  => File["${lizardfs::cfgdir}mfsgoals.cfg"],
     }
-<<<<<<< HEAD
-=======
   }
   else {
     fail()
->>>>>>> upstream/master
   }
 
   file { "${lizardfs::cfgdir}mfsgoals.cfg":
